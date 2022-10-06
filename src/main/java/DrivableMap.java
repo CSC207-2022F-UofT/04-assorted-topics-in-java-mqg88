@@ -67,10 +67,10 @@ class DrivableMap {
      *       drivable_map.
      */
     public List<Tradable> getTradable(){
-        List list_so_far = Collections.emptyList();
+        List<Tradable> list_so_far = new ArrayList<>();
         for (String key: drivable_map.keySet()){
             if (drivable_map.get(key) instanceof Tradable){
-                list_so_far.add(drivable_map.get(key));
+                list_so_far.add((Tradable)drivable_map.get(key));
             }
         }
         return list_so_far;
