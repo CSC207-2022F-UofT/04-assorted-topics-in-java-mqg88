@@ -33,7 +33,7 @@ class DrivableMap {
             this.drivable_map.put(id, object);
         }
         else{
-            return true;
+            return false;
         }
         return this.drivable_map.containsKey(id);
 
